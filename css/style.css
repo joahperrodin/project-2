@@ -1,0 +1,392 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', serif;
+	line-height: 1.4;
+	color: #4b5658;
+	text-align: center;
+	background-color: #fff;
+	padding: 0;
+}
+
+header,
+footer,
+.contact {
+	width: 80%;
+	background-color: #d3d3d3;
+}
+
+h1 {  
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1.25em;
+	color: #4b5658;
+}
+
+p {
+	font-size: 1.1em;
+	width: 100%;
+	text-align: center;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-nav li {
+	background-color: white;
+	color: #4b5658;
+	padding: .5em;
+	margin-top: 4px;
+}
+
+.main-nav a {
+	display: block;
+}
+
+a:visited {
+  	color: #4b5658;
+}
+
+a:hover {
+  	color: #4b5658;
+}
+
+#footer a:visited {
+  	color: #4b5658;
+}
+
+#footer a:hover {
+  	color: #4b5658;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.container {
+	width: 100%;
+	padding: 0 1em;
+	text-align: center;
+}
+
+.header {
+	padding-bottom: 1em;
+}
+
+.portfolio,
+.skills,
+.contact {
+	padding-top: 1.7em;
+	padding-bottom: 2em;
+}
+
+.port-ul {
+	display: inline-block;
+	padding: 0;
+}
+
+.footer {
+	border-top: 2px solid #4b5658;
+}
+
+
+.skills ul {
+	display: inline-block;
+}
+
+.footer-ul {
+	display: inline-block;
+	padding: 1em 0;
+	width: 100%;
+}
+
+
+/* ---- Page Elements ---- */
+
+#home {
+	margin-top: 0;
+	padding-top: 1em;
+}
+
+#profile-pic {
+	width: 70%;
+	margin-top: 3em;
+}
+
+.port-pic {
+	margin-top: 1.7em;
+}
+
+#rene {
+	float: left;
+}
+
+#footer {
+	float: right;
+}
+
+.portfolio li p,
+.skills p {
+	display: inline-block;
+	margin-top: -3px;
+	width: 65%;
+}
+
+.info li {
+	display: inline-block;
+	padding: 0 6px;
+	margin-top: 8px;
+}
+
+.hidden {
+	display: none;
+}
+
+.info a {
+	color: #4b5658;
+}
+
+.info a:hover {
+	color: #a9a9a9;
+}
+
+.info a:visited {
+	color: #efefef;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+
+.main-nav li {
+	color: #4b5658;
+	padding: 5px 0;
+	background-color: transparent;
+	margin: 0 8px;
+	display: inline-block;
+	font-size: 1.25em;
+	text-align: right;
+}
+
+.profile {
+	display: inline-block;
+	width: 90%;
+}
+
+#profile-pic {
+	float: right;
+	width: 40%;
+	margin-top: 1.8em;
+}
+
+.profile p {
+	width: 58%;
+	text-align: left;
+	font-size: 1.35em
+}
+
+.header {
+	padding-bottom: 3em;
+}
+
+.portfolio li {
+	display: inline-block;
+	float: left;
+	width: 48%;
+	margin: 5px 1%;
+	vertical-align: top;
+}
+
+.skills li {
+	display: inline-block;
+	float: left;
+	width: 23%;
+	margin: 5px 1%;
+	vertical-align: top;
+}
+
+.skills p {
+	text-align: left;
+}
+
+.skills p {
+	padding: 0;
+	margin-top: -1em;
+	width: 100%;
+}
+
+#interested {
+	padding: 0 20%;
+}
+
+#footer {
+	display: none;
+}
+
+.footer-nav {
+	display: inline-block;
+	float: right;
+}
+
+.hidden {
+	display: inline-block;
+	text-align: left;
+	margin: 0 6px;
+	float: left;
+}
+
+a:visited {
+  	color: #4b5658;
+}
+
+a:hover {
+  	color: #565656;
+}
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+
+} /* ---- END 769 ---- */ 
+
+
+
+@media (min-width: 1024px) {
+
+
+.nav-bar,
+.profile,
+.skills,
+.portfolio,
+.footer,
+.contact div {
+	display: inline-block;
+	width: 90%;
+	max-width: 1025px;
+}
+
+.nav-bar {
+	padding-top: 1em;
+}
+
+#home {
+	float: left;
+	padding-top: 5px;
+}
+
+.main-nav {
+	float: right;
+}
+
+.portfolio {
+	margin: 1em;
+	padding: 0;
+}
+
+.portfolio li {
+	width: 31.3333%;
+	vertical-align: top;
+}
+
+.portfolio li p {
+	width: 100%;
+	padding: 0 5px;
+}
+
+#interested {
+	display: inline-block;
+	width: 40%;
+	padding: 0 5px;
+	margin-top: 0;
+}
+
+.skills {
+	margin: 2em 0;
+}
+
+.skills ul {
+	position: relative;
+	width: 46%;
+	margin: 2em 1% 0 1%;
+	vertical-align: top;
+	height: 300px;
+}
+
+.skills ul h3 {
+	margin-top: 0;
+}
+
+.skills li {
+	display: block;
+	width: 48%;
+}
+
+.skills .port-pic {
+	margin-top: 0;
+}
+
+#pic1,
+#pic3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 48%;
+}
+
+#pic2,
+#pic4 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 48%;
+}
+
+ #text1,
+ #text3 {
+ 	position: absolute;
+	top: 140px;
+	left: 0;
+	width: 48%; 
+}
+
+ #text2,
+ #text4 {
+ 	position: absolute;
+	top: 140px;
+	right: 0;
+	width: 48%; 
+ }
+
+}
+
